@@ -1,0 +1,119 @@
+**[STEP 1.0]**
+g 3
+l 6
+a 1
+d 1
+p 12
+m 10
+j 6
+b 1
+e 2
+i 5
+k 6
+n 10
+s 30
+h 4
+c 1
+f 2
+f 2
+
+listHead-->(DUMMY,0,a)(a,1,d)(d,1,b)(b,1,c)(c,1,e)(e,2,f)(f,2,f)(f,2,g)(g,3,h)(h,4,i)(i,5,l)(l,6,j)(j,6,k)(k,6,m)(m,10,n)(n,10,p)(p,12,s)(s,30,)
+
+
+**[STEP 2.0]**
+Iteration 1:
+listHead -->(b,1)(c,1)(e,2)(f,2)(f,2)(ad,2)(g,3)(h,4)(i,5)(l,6)(j,6)(k,6)(m,10)(n,10)(p,12)(s,30)
+(ad) was inserted.
+
+Iteration 2:
+listHead -->(e,2)(f,2)(f,2)(ad,2)(bc,2)(g,3)(h,4)(i,5)(l,6)(j,6)(k,6)(m,10)(n,10)(p,12)(s,30)
+(bc) was inserted.
+
+Iteration 3:
+listHead -->(f,2)(ad,2)(bc,2)(g,3)(h,4)(ef,4)(i,5)(l,6)(j,6)(k,6)(m,10)(n,10)(p,12)(s,30)
+(ef) was inserted.
+
+Iteration 4:
+listHead -->(bc,2)(g,3)(h,4)(ef,4)(fad,4)(i,5)(l,6)(j,6)(k,6)(m,10)(n,10)(p,12)(s,30)
+(fad) was inserted.
+
+Iteration 5:
+listHead -->(h,4)(ef,4)(fad,4)(i,5)(bcg,5)(l,6)(j,6)(k,6)(m,10)(n,10)(p,12)(s,30)
+(bcg) was inserted.
+
+Iteration 6:
+listHead -->(fad,4)(i,5)(bcg,5)(l,6)(j,6)(k,6)(hef,8)(m,10)(n,10)(p,12)(s,30)
+(hef) was inserted.
+
+Iteration 7:
+listHead -->(bcg,5)(l,6)(j,6)(k,6)(hef,8)(fadi,9)(m,10)(n,10)(p,12)(s,30)
+(fadi) was inserted.
+
+Iteration 8:
+listHead -->(j,6)(k,6)(hef,8)(fadi,9)(m,10)(n,10)(bcgl,11)(p,12)(s,30)
+(bcgl) was inserted.
+
+Iteration 9:
+listHead -->(hef,8)(fadi,9)(m,10)(n,10)(bcgl,11)(p,12)(jk,12)(s,30)
+(jk) was inserted.
+
+Iteration 10:
+listHead -->(m,10)(n,10)(bcgl,11)(p,12)(jk,12)(heffadi,17)(s,30)
+(heffadi) was inserted.
+
+Iteration 11:
+listHead -->(bcgl,11)(p,12)(jk,12)(heffadi,17)(mn,20)(s,30)
+(mn) was inserted.
+
+Iteration 12:
+listHead -->(jk,12)(heffadi,17)(mn,20)(bcglp,23)(s,30)
+(bcglp) was inserted.
+
+Iteration 13:
+listHead -->(mn,20)(bcglp,23)(jkheffadi,29)(s,30)
+(jkheffadi) was inserted.
+
+Iteration 14:
+listHead -->(jkheffadi,29)(s,30)(mnbcglp,43)
+(mnbcglp) was inserted.
+
+Iteration 15:
+listHead -->(mnbcglp,43)(jkheffadis,59)
+(jkheffadis) was inserted.
+
+Iteration 16:
+listHead -->(mnbcglpjkheffadis,102)
+(mnbcglpjkheffadis) was inserted.
+
+
+**[STEP 3.0]**
+(jkheffadis,59,mnbcglpjkheffadis,jkheffadi,s,---)
+(jkheffadi,29,s,jk,heffadi,---)
+(jk,12,heffadi,j,k,---)
+(j,6,k,NULL,NULL,000)
+(k,6,hef,NULL,NULL,001)
+(heffadi,17,mn,hef,fadi,---)
+(hef,8,fadi,h,ef,---)
+(h,4,ef,NULL,NULL,0100)
+(ef,4,fad,e,f,---)
+(e,2,f,NULL,NULL,01010)
+(f,2,f,NULL,NULL,01011)
+(fadi,9,m,fad,i,---)
+(fad,4,i,f,ad,---)
+(f,2,ad,NULL,NULL,01100)
+(ad,2,bc,a,d,---)
+(a,1,d,NULL,NULL,011010)
+(d,1,b,NULL,NULL,011011)
+(i,5,bcg,NULL,NULL,0111)
+(s,30,mnbcglp,NULL,NULL,1)
+
+(a,011010)
+(d,011011)
+(e,01010)
+(f,01011)
+(f,01100)
+(h,0100)
+(i,0111)
+(j,000)
+(k,001)
+(s,1)

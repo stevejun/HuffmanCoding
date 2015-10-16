@@ -1,0 +1,48 @@
+
+Algorithm Step 1:
+Step1.0: Make a linked list with dummy node
+Step1.1: Read letter, then prob (read from file)
+Step1.2: New node (get a new node)
+	New node.ch (letter)
+	New node.prob (probability)
+Step1.3:Do insert the new node into list in ascending order
+	Insert(LH,newnode)
+Step1.4:Repeat step 1.1 to 1.3
+	Until file is empty
+
+
+
+Algorithm Step 2:
+Step2.0: walker<-LH
+Step2.1: NN<-get a new node
+Step2.2: NN.ch<-walker.next.ch+walker.next.next.ch
+	NN.prob<- walker.next.prob+walker.next.next.prob
+	NN.left<-walker.next
+	NN.right<-walker.next.next
+	Walker.next<-waler.next.next.next
+Step2.3:Insert(LH,NN)
+Step2.4:Repeat step 2.1 to 2.3
+	Until only one real node after dummy
+	Walker.next.next=null
+
+
+
+Algorithm Step 3:
+
+(a) Traverse the binary tree using the pre-order traveral method. 
+When a node in the binary tree is visited, print  all six (6) fields of the node
+when it is visited, one node per text line, ie.,
+
+  (dummy, 0.0, next, NULL, NULL, " ")
+  (character-string, prob, next, left, right, code-string)
+  (character-string, prob, next, left, right, code-string)
+  (character-string, prob, next, left, right, code-string)
+  (character-string, prob, next, left, right, code-string)
+  :
+  :
+
+(b) Print the Huffman code table with five (5) columns, nicely formated
+including column Header (ie., character, prob,
+code, #bits, entropy) as taught in class,"
+
+(c) Print  the total entropy.
